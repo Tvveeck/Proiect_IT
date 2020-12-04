@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="myCSS.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="div-0" >
+
+    <img id="imag-1" src="Asset 1 1.svg"  alt="Img not loaded" ></img>
+
+    <span  id="span-1">
+      <button type="button" class="btn btn-dark btn-responsive btn-lg" style="color: rgba(146, 227, 169, 1);">Logare</button>
+      <button type="button" class="btn btn-link btn-responsive btn-lg" style="color: black;">Creare cont</button>
+      <button type="button" class="btn btn-link btn-responsive btn-lg" style="color: black;">Contact</button>
+    </span>
+
+    <span class="span-menu">
+      <img id="menu" onclick="myFunction()" class="drop-down-menu" src="Menu.svg" alt="Img not loaded"></img>
+      <div id="dropdown" class="dropdown-content">
+        <button type="button" class="btn btn-link " style="color: rgba(146, 227, 169, 1);">Logare</button>
+        <br>
+        <button type="button" class="btn btn-link " style="color: rgba(146, 227, 169, 1);">Creare cont</button>
+        <br>
+        <button type="button" class="btn btn-link " style="color:rgba(146, 227, 169, 1);">Contact</button>
+      </div>
+    </span>
+
+    <br><br>
+  </div>
+
+
+  <div id="myModal" class="modal" >
+
+    <div class="modal-content" >
+
+      <div  id="div-modal">
+          <h5 id="modal-title">Exprima-ti frustarile</h5>
+          <img src="x.svg" id="modal-x" onclick="hideModal()" alt="Image not loaded"></img>
+      </div>
+
+      <span style="height:240px;">
+        <br>
+
+        <form id="form1">
+          <p></p>
+          <select name="materie" id="materie" class="form-border"  style="width: 80%;">
+            <option value="" disabled selected hidden>Alege materia</option>
+          </select>
+          <p></p>
+          <input type="text" class="form-border" id="nume_proiect" name="nume_proiect" style="width: 80%;" placeholder="Titlul proiectului">
+        </form>
+
+        <button onclick="submitdata1()" class="btn btn-dark btn-lg" style="color: rgba(146, 227, 169, 1);width:40%;margin-left:30%;margin-bottom:40px;" >Incarca</button>
+      </span>
+
+      <div  id="div-modal" style="">
+        <h5 id="modal-plangeri" style="">Plângeri introduse până acum.</h5>
+      </div>
+
+      <div id="plangeri" class="div-plangeri">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="div-1">
+
+      <span class="span00">
+
+        <span class="span01">
+
+          <h3 style="width: 80%;margin:auto;"><b>Cumpăratul de teme nu a fost niciodată mai simplu!</b></h3>
+          <br>
+          <p style="width: 80%;margin:auto">Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</p>
+          <br>
+
+          <span class="span03">
+            <button type="button" onclick="modalFunction()" class="btn btn-dark  btn-lg b1" >Vreau să cumpăr</button>
+            <button type="button" class="btn btn-dark  btn-lg b2" >Vreau sa fac teme pentru alții</button>
+          </span>
+
+        </span>
+
+        <span class="span02" >
+          <img  src="Group 1image.svg"  alt="Img not loaded" style="margin:auto;width:70%;"></img>
+        </span>
+
+      </span>
+
+  </div>
+
+
+  <div class="div-2">
+    <h3 style="width: 50%; margin-left: 25%;text-align: center;"><br>Cum funcționează?</h3>
+
+    <span class="span11" >
+
+      <span class="span22">
+        <img src="Group 61.svg" alt="Img not loaded"></img>
+        <p style="padding-left:5%">Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p>
+      </span>
+
+      <span class="span22">
+        <img src="Group 72.svg" alt="Img not loaded"></img>
+        <p style="padding-left:5%">Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p>
+      </span>
+
+      <span class="span22">
+        <img src="Group 83.svg" alt="Img not loaded" ></img>
+        <p style="padding-left:5%">După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p>
+      </span>
+
+    </span>
+
+  </div>
+
+
+  <div class="div-3">
+
+    <span class="span33">
+
+      <span class="span44" >
+        <h3  style="width: 95%;"> Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h3>
+        <br>
+        <p class="text-form">Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</p>
+      </span>
+
+      <span class="span44" >
+        <form  acion="/", method="POST">
+
+          <label for="nume" style="font-family: 'Merriweather', serif;">Nume</label>
+          <input type="text" id="nume" class="form-border" name="nume" style="width: 100%;" placeholder="Nume" required>
+
+          <p></p>
+
+          <label for="mail" style="font-family: 'Merriweather', serif;">Email</label>
+          <input type="text" class="form-border" id="mail" name="mail" style="width: 100%;" placeholder="example@lsac.ro" required>
+
+          <p></p>
+
+          <label for="injuratura" style="font-family: 'Merriweather', serif;" required>Înjurătura</label>
+          <textarea class="form-border" id="injuratura" name="injuratura" style="width: 100%;height: auto!important;resize: none;" placeholder="Speram sa fie una pe care nu am mai auzit-o"></textarea>
+
+          <p></p>
+
+          <input type="submit" class="btn btn-dark btn-lg" style="color: rgba(146, 227, 169, 1);" value="Trimite">
+
+        </form>
+      </span>
+
+    </span>
+
+  </div>
+
+
+  <div class="div-4" style="background-color: #263238;height: 100px;">
+
+    <span style="display:flex; justify-content:center;">
+      <img src="insta.svg" alt="Image not loaded"></img>
+      <img src="twitter.svg" alt="Image not loaded" style="padding:20px;"></img>
+      <img src="facebook.svg" alt="Image not loaded"></img>
+    </span>
+
+    <span style="text-align:center">
+      <p style="color: white">Copyright 2020 | Cine ne pârăște o mierlește.</p>
+    </span>
+
+  </div>
+
+</body>
+
+<script src="java.js"></script>
+
+</html>
