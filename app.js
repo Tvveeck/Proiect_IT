@@ -6,7 +6,7 @@ const http = require('http');
 const port = process.env.PORT || 3000
 const fs = require('fs');
 
-app.use(express.static('public'));
+app.use(express.static('Public'));
 
 app.get('/', function(req, res) {
       res.sendFile(path.join(__dirname + '/index.html'));
